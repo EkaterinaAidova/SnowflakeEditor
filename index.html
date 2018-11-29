@@ -94,7 +94,7 @@ $('.start').on('click', function() {
         clearInterval(rand_interval)
         $('a-entity.snow').remove()
         $('body').removeClass('snowing')
-        let t_txt = '<a-entity class="sample" obj-model="obj: #snowflake;" scale=".2 .2 .2" position="0 0.3 -5" rotation="45 0 0" material="src:#flike_tile;transparent:true;side:double"><a-animation easing="linear" attribute="rotation" dur="10000" fill="forwards" to="45 360 0" repeat="indefinite"></a-animation></a-entity>'
+        let t_txt = '<a-entity class="sample" obj-model="obj: #snowflake;" scale=".2 .2 .2" position="0 0.3 -5" rotation="45 0 0" material="src:#flake_tile;transparent:true;side:double"><a-animation easing="linear" attribute="rotation" dur="10000" fill="forwards" to="45 360 0" repeat="indefinite"></a-animation></a-entity>'
         $(t_txt).appendTo($('.container'))
         $('#cam').removeAttr('look-controls')
         $('#cam').attr('rotation', '0 0 0')
@@ -162,7 +162,7 @@ function apply_img() {
     let dataUrl = tile.toDataURL()
     $('a-assets > img').attr('src', dataUrl)
     $('.sample').remove();
-    let t_txt = '<a-entity class="sample" obj-model="obj: #snowflake;" scale=".2 .2 .2" position="0 0.3 -5" rotation="45 0 0" material="src:#flike_tile;transparent:true;side:double"><a-animation easing="linear" attribute="rotation" dur="10000" fill="forwards" to="45 360 0" repeat="indefinite"></a-animation></a-entity>'
+    let t_txt = '<a-entity class="sample" obj-model="obj: #snowflake;" scale=".2 .2 .2" position="0 0.3 -5" rotation="45 0 0" material="src:#flake_tile;transparent:true;side:double"><a-animation easing="linear" attribute="rotation" dur="10000" fill="forwards" to="45 360 0" repeat="indefinite"></a-animation></a-entity>'
     $(t_txt).appendTo($('.container'))
 }
 
